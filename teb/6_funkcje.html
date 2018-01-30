@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style/style1.css">
+
+    <body>
+
+
+    <script>
+        function witaj(imie){
+            document.write("Witaj " + imie + "<br>");
+        }
+
+        function poleKwadratu(bok){
+
+            document.write("Pole wynosi: " + bok * bok + "<br>")
+        }
+
+
+
+
+
+        function poleKwadratu1(bok){
+            var pole = bok * bok;
+            document.write("Pole wynosi: " + bok * bok + "<br>")
+
+
+        } function poleKwadratu2(bok){
+            var pole = bok * bok;
+            return pole;
+
+
+        }
+
+        function poleProstokata(a,b){
+            return a*b;
+
+
+
+        }
+
+
+
+        function poleTrojkata(a,h); {
+        return (a*h)/2;
+        }
+
+
+        witaj("Janusz"); //wywołanie funkcji
+        var x = "Anna";
+        witaj(x);
+
+        var imie1 = prompt("Podaj swoje imie");
+        witaj(imie1);
+
+        poleKwadratu(4);
+        poleKwadratu1(5);
+        alert("Pole Kwadratu wynosi: " + poleKwadratu2(3));
+
+        var bok1, bok2, poleProst;
+        bok1 = prompt("Podaj bok pierwszy");
+        bok2 = prompt("Podaj bok drugi");
+        poleProst = poleProstokata(bok1,bok2);
+        console.log(poleProst);
+        document.write("Pole prostokąta wynosi: " + poleProst + "cm<sup>2</sup>");
+
+        var podstawa, wysokosc, poleTrojk;
+        podstawa = prompt("Podaj długość podstawy");
+        wysokosc = prompt("Podaj wysokość");
+        poleTrojk = poleTrojkata(podstawa,wysokosc);
+        document.write("Pole trójkąta wynosi: " + poleTrojk + "cm<sup>2</sup><br>");
+
+
+        </script>
+
+
+
+    </body>
+
+    </head>
+
+</html>
