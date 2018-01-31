@@ -43,6 +43,28 @@
                      var y = parseFloat(elDruga.value);
                      elKomunikat.innerHTML = x + y;
 
+
+                     function odejmowanie(){
+                     if(elPierwsza.value.length !=0 && elDruga.value.length);
+                     var x = parseFloat(elPierwsza.value);
+                     var y = parseFloat(elDruga.value);
+                     elKomunikat.innerHTML = x - y;
+
+
+                         function mnozenie(){
+                     if(elPierwsza.value.length !=0 && elDruga.value.length);
+                     var x = parseFloat(elPierwsza.value);
+                     var y = parseFloat(elDruga.value);
+                     elKomunikat.innerHTML = x * y;
+
+                             function dzielenie(){
+                     if(elPierwsza.value.length !=0 && elDruga.value.length);
+                     var x = parseFloat(elPierwsza.value);
+                     var y = parseFloat(elDruga.value);
+                     elKomunikat.innerHTML = x / y;
+
+
+
                  }
              }
 
@@ -51,6 +73,12 @@
              elMnozenie.addEventListener('click', puste);
              elDzielenie.addEventListener('click', puste);
                  elDodawanie.addEventListener('click', dodawanie);
+
+            elDodawanie.addEventListener('click', puste);
+             elOdejmowanie.addEventListener('click', puste);
+             elMnozenie.addEventListener('click', puste);
+             elDzielenie.addEventListener('click', puste);
+            elDodawanie.addEventListener('click', dodawanie);
 
 
              </script>
